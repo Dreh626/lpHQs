@@ -1,24 +1,21 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, useTheme } from '@material-ui/core';
 import ImageCard from './ImageCard';
 import Notices from '../static/notice';
 import useWindowPosition from '../hooks/useWindowPosition';
 
 
 
+
 const useStyles = makeStyles((theme) => ({
     root:{
-        height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         [theme.breakpoints.down('md')]:{
-            flexDirection: 'column',
-            Width: '10.625rem',
-            Height: '22rem',
-            
+            flexDirection: 'column',          
         }
-
     }
 
 })); 

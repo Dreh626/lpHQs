@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   },
   media: {
     height: 440,
-    overflow: 'hidden',
+    
     maxHeight: '440px',
     transition: 'all 0.2s ease-out',
     
