@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 500,
     width: '100%',
@@ -18,11 +18,14 @@ const useStyles = makeStyles({
     margin: '20px',
     "&:hover $media": {
       transform: 'scale(1.06)',
-    }
+    },
+    [theme.breakpoints.down('md')]:{
+        maxWidth: 300,
+                
+  }
   },
   media: {
     height: 440,
-    
     maxHeight: '440px',
     transition: 'all 0.2s ease-out',
     
@@ -40,7 +43,7 @@ const useStyles = makeStyles({
     fontSize: '2rem',
     color: '#DDD',
   }
-});
+}));
 
 export type imageCardProps = {
   notice: {
