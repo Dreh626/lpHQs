@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, Collapse } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 645,
+    maxWidth: 500,
     width: '100%',
     height: '600px',
     background: 'rgba(0, 0, 0, 0.5)',
@@ -49,13 +49,15 @@ export type imageCardProps = {
     description: string
 
   }
+  checked: boolean
 
 }
 
-export default function ImageCard( {notice}:imageCardProps) {
+export default function ImageCard( {notice, checked}:imageCardProps) {
   const classes = useStyles();
 
   return (
+    <Collapse in={Boolean(checked)} {...(checked ? {timeout: 1000} : {})}>
     <Card className={classes.root}>
         <CardMedia
           className={classes.media}
@@ -71,5 +73,6 @@ export default function ImageCard( {notice}:imageCardProps) {
           </Typography>
         </CardContent>
     </Card>
+    </Collapse>
   );
 }

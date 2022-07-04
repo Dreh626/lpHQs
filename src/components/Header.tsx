@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles, AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
-import {Sort, ExpandMore} from '@material-ui/icons'
+import {Sort, ExpandMore} from '@material-ui/icons';
+import { Link as Scroll } from "react-scroll";
 
 
 
@@ -68,9 +69,11 @@ export default function Header(){
             <Collapse in={checked} collapsedSize={50} {...(checked ? {timeout: 1000} : {})}>
             <div className={classes.container}>
                 <h2 >Noticias sobre<br /> <span className={classes.hq}>HQs</span></h2>
+                <Scroll to="notice-to-visit" smooth={true}>
                 <IconButton>
                     <ExpandMore className={classes.goDown}/>
                 </IconButton>
+                </Scroll>
             </div>
             </Collapse>
         </div>

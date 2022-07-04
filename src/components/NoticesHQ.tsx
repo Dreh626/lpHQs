@@ -21,9 +21,9 @@ export default function (){
     const checked = useWindowPosition({id: 'header'});
 
     return(
-        <div className={classes.root}>
-            <ImageCard notice={Notices[0]}/>
-            <ImageCard notice={Notices[1]}/>
+        <div className={classes.root} id="notice-to-visit">
+            <ImageCard notice={Notices[0]} checked={checked}/>
+            <ImageCard notice={Notices[1]} checked={checked}/>
         </div>
     )
 }
