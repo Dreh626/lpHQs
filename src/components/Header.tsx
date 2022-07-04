@@ -56,7 +56,7 @@ export default function Header(){
     },[])
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} id="header">
             <AppBar className={classes.appbar}>
                 <Toolbar className={classes.toolbar}>
                 <h1 className={classes.appTitle}>Fórum <span className={classes.hq}>HQ</span></h1>
