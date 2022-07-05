@@ -21,8 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('md')]:{
         maxWidth: 300,
-                
-  }
+    }
   },
   media: {
     height: 440,
@@ -42,6 +41,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Nunito',
     fontSize: '2rem',
     color: '#DDD',
+    [theme.breakpoints.down('md')]:{
+      display: 'none',
+  }
   }
 }));
 
