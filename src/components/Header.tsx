@@ -112,7 +112,7 @@ export default function Header() {
             </AppBar>
             <Collapse in={checked} collapsedSize={50} {...(checked ? { timeout: 1000 } : {})}>
                 <div className={classes.container}>
-                    <h2 >Noticias sobre<br /> <span className={classes.hq}>HQs</span></h2>
+                    <h2 >Notícias sobre<br /> <span className={classes.hq}>HQs</span></h2>
                     <Scroll to="notice-to-visit" smooth={true}>
                         <IconButton>
                             <ExpandMore className={classes.goDown} />
