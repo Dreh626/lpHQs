@@ -52,8 +52,8 @@ const useStyles = makeStyles((theme) => ({
 
 const options = [
     'Menu',
-    'About',
-    'Contact'
+    'Sobre',
+    'Contato'
 
 ];
 
