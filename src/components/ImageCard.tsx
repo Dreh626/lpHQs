@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 500,
-    width: '100%',
+    width: '100vh',
     height: '600px',
     background: 'rgba(0, 0, 0, 0.5)',
     margin: '20px',
@@ -33,13 +33,14 @@ const useStyles = makeStyles((theme) => ({
   title:{
     fontFamily: 'Nunito',
     fontWeight: 'bold',
-    fontSize: '2rem',
+    fontSize: '1.5rem',
     color: '#FFF',
 
   },
   description:{
     fontFamily: 'Nunito',
-    fontSize: '2rem',
+    fontSize: '1rem',
+    padding:'0.5rem',
     color: '#DDD',
     [theme.breakpoints.down('md')]:{
       display: 'none',
