@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     appbar:{
-        background: 'none',
+        background: 'rgba(0, 0, 0, 0.2)',
         boxShadow: 'none !important',
         
     },
